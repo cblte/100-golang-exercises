@@ -25,12 +25,16 @@ func main() {
 		log.Fatal("Error occured: ", err)
 	}
 
+	fmt.Printf("%#v", Ex003(n))
+}
+
+// Ex003 returns a map with numbers are their squared values
+func Ex003(n int) map[int]int {
 	// create a map with the size of n
 	var numbers = make(map[int]int, n)
 
 	for i := 1; i <= n; i++ {
 		numbers[i] = i * i
 	}
-	fmt.Printf("%#v", numbers)
-
+	return numbers
 }
