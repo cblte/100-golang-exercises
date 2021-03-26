@@ -42,11 +42,13 @@ He should use Golang to solve more complex problem using more rich libraries fun
 
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-
 ==== Hint:
 Consider using strconv and strings.Join --
 
 ==== Solution
+
+link:001/exercise001.go[]
+
 [source, go]
 ----
 func main() {
@@ -60,3 +62,16 @@ func main() {
 	fmt.Println(strings.Join(numbers, ","))
 }
 ----
+
+=== Exercise 002: Beginner
+
+Write a program which can compute the factorial of a given numbers. The results should be printed in a comma-separated sequence on a single line.
+
+Suppose the following input is supplied to the program: 8
+Then, the output should be: 40320
+
+==== Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+==== Solution:
+link:002/exercise002.go[]
