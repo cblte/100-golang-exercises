@@ -1,0 +1,62 @@
+= 100+ challenging Golang programming exercises
+Carsten Brueggenolte <mail@cbrueggenolte.de>
+v1.0.0, March 2021: Initial Document
+// Meta Data
+:description: Rewritten from the 100+ Python challenging programming exercises"
+:keywords: Golang, programming, exercises, challenges
+:toc: preamble
+// Settings
+:icons: font
+:source-highlighter: highlightjs
+:sectnums:
+:url-project: https://github.com/cblte/100-golang-exercises/
+:url-issues: {url-project}/issues
+
+
+These challenges come from a file called "100+ Python challenging programming exercises" I found somewhere on the internet. I want to rewrite all exercises for Golang!
+
+I will update this file along with my rewriting of the solutions provided. Furthermore, I will also put a file for each solution into a subdirectory, so it can be run locally. Some smaller single file solutions can also be run in the Golang playground (https://play.golang.org)
+
+This is also a training for myself to learn the language and to exercise writing code. I also want to write tests for most of the apps, because I think, tests are always forgotten, and I also should write more tests when writing code. 
+
+== Level description
+
+Here I describe what the different levels mean. This might get updated over time. 
+
+=== Level 1 Beginner
+
+Beginner means someone who has just gone through an introductory Golang course. He can solve some problems with 1 or 2 Golang classes or functions. Normally, the answers could directly be found in the textbooks.
+
+=== Level 2 Intermediate
+
+Intermediate means someone who has just learned Golang, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Golang classes or functions. The answers cannot be directly be found in the textbooks.
+
+=== Level 3 Advanced
+
+He should use Golang to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Golang standard packages and advanced techniques.
+
+
+== Exercises
+
+=== Exercise 001: Beginner
+
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+
+==== Hint:
+Consider using strconv and strings.Join --
+
+==== Solution
+[source, go]
+----
+func main() {
+	fmt.Println("Exercise 001")
+	var numbers []string
+	for i := 2000; i <= 3200; i++ {
+		if i%7 == 0 && i%5 != 0 {
+			numbers = append(numbers, strconv.Itoa(i))
+		}
+	}
+	fmt.Println(strings.Join(numbers, ","))
+}
+----
