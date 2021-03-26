@@ -14,11 +14,20 @@ import (
 
 func main() {
 	fmt.Println("Exercise 001")
+
+	res := Ex001(2000, 3200)
+
+	fmt.Println(res)
+
+}
+
+// Ex001 returns a slice of numbers
+func Ex001(low, high int) string {
 	var numbers []string
-	for i := 2000; i <= 3200; i++ {
+	for i := low; i <= high; i++ {
 		if i%7 == 0 && i%5 != 0 {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
 	}
-	fmt.Println(strings.Join(numbers, ","))
+	return fmt.Sprintln(strings.Join(numbers, ","))
 }
