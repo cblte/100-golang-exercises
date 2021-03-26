@@ -29,14 +29,16 @@ func main() {
 		log.Fatal("Please enter a positiv number.")
 	}
 
+	fmt.Printf("Factorial of %d = %d", input, Ex002(input))
+}
+
+// Ex002 returns a factorial of input
+func Ex002(input int) uint64 {
 	// uint64 because it can get big
-	var result uint64 = 1
+	var factorial uint64 = 1
 
 	for i := 1; i <= input; i++ {
-		fmt.Print(i)
-		result *= uint64(i)
-		fmt.Println(result)
+		factorial *= uint64(i)
 	}
-
-	fmt.Printf("Factorial of %d = %d", input, result)
+	return factorial
 }
