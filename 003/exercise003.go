@@ -7,7 +7,7 @@ With a given integral number n, write a program to generate a map that contains 
 
 Suppose the following input is supplied to the program: 8
 Then, the output should be:
-map[int]int{1:1, 2:4, 3:9, 4:16, 5:25, 6:36, 7:49, 8:64}
+map[1:1 2:4 3:9 4:16 5:25 6:36 7:49 8:64]
 
 */
 
@@ -25,7 +25,7 @@ func main() {
 		log.Fatal("Error occured: ", err)
 	}
 
-	fmt.Printf("%#v", Ex003(n))
+	fmt.Printf("%v", Ex003(n))
 }
 
 // Ex003 returns a map with numbers are their squared values
