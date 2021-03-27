@@ -29,5 +29,5 @@ func Ex001(low, high int) string {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
 	}
-	return fmt.Sprintln(strings.Join(numbers, ","))
+	return strings.Join(numbers, ",")
 }
