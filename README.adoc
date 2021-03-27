@@ -4,24 +4,24 @@ v1.0.0, March 2021: Initial Document
 // Meta Data
 :description: Rewritten from the 100+ Python challenging programming exercises"
 :keywords: Golang, programming, exercises, challenges
-:toc: preamble
 // Settings
 :icons: font
 :source-highlighter: highlightjs
-:sectnums:
 :url-project: https://github.com/cblte/100-golang-exercises/
 :url-issues: {url-project}/issues
 
 
 These challenges come from a file called "100+ Python challenging programming exercises" I found somewhere on the internet. I want to rewrite all exercises for Golang!
 
-I will update this file along with my rewriting of the solutions provided. Furthermore, I will also put a file for each solution into a subdirectory, so it can be run locally. Some smaller single file solutions can also be run in the Golang playground (https://play.golang.org)
+I will update the file along with me rewriting the solutions provided in Python. Furthermore, I will also put a file for each solution into a subdirectory, so it can be run locally. Some smaller single file solutions can also be run in the Golang playground (https://play.golang.org).
 
 This is also a training for myself to learn the language and to exercise writing code. I also want to write tests for most of the apps, because I think, tests are always forgotten, and I also should write more tests when writing code. 
 
+The exercises for the different levels (see below) are split into the respective files. 
+
 == Level description
 
-Here I describe what the different levels mean. This might get updated over time. 
+Here is the original description of the python file for the different exercises. 
 
 === Level 1 Beginner
 
@@ -33,63 +33,4 @@ Intermediate means someone who has just learned Golang, but already has a relati
 
 === Level 3 Advanced
 
-He should use Golang to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Golang standard packages and advanced techniques.
-
-
-== Exercises
-
-=== Exercise 001: Beginner
-
-Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a comma-separated sequence on a single line.
-
-==== Hint:
-Consider using strconv and strings.Join --
-
-==== Solution
-
-link:001/exercise001.go[]
-
-[source, go]
-----
-func main() {
-	fmt.Println("Exercise 001")
-	var numbers []string
-	for i := 2000; i <= 3200; i++ {
-		if i%7 == 0 && i%5 != 0 {
-			numbers = append(numbers, strconv.Itoa(i))
-		}
-	}
-	fmt.Println(strings.Join(numbers, ","))
-}
-----
-
-=== Exercise 002: Beginner
-
-Write a program which can compute the factorial of a given numbers. The results should be printed in a comma-separated sequence on a single line.
-
-Suppose the following input is supplied to the program: 8
-Then, the output should be: 40320
-
-==== Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-
-==== Solution:
-link:002/exercise002.go[]
-
-
-=== Question 3 : Beginner
-
-Exercise 003
-
-With a given integral number n, write a program to generate a map that contains (i, i*i) such that is an integral number between 1 and n (both included), and then the program should print the map with representation of the value
-
-Suppose the following input is supplied to the program: 8
-Then, the output should be:
-map[int]int{1:1, 2:4, 3:9, 4:16, 5:25, 6:36, 7:49, 8:64}
-
-==== Hints:
-
-use make for the map and'%#v' verb for the output.
-
-==== Solution:
-link:003/exercise003.go
+Advanced means you should use Golang to solve more complex problem using more rich libraries functions and data structures and algorithms. The user is supposed to solve the problem using several Golang standard packages and advanced techniques.
