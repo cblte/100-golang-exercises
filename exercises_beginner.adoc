@@ -69,4 +69,4 @@ Then, the output should be: `[34 67 55 33 12 98]`
 In case of input data being supplied to the question, it should be assumed to be a console input. package `strings` has a split method. 
 
 === Solution:
-link:004/exercise004.go
+link:004/exercise004.go[]
