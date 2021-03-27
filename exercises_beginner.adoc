@@ -4,7 +4,8 @@ v1.0.0, March 2021
 // Meta Data
 :description: Rewritten from the 100+ Python challenging programming exercises"
 :keywords: Golang, programming, exercises, challenges
-:toc: macro
+:toc: auto
+:toclevels: 1
 // Settings
 :icons: font
 :source-highlighter: highlightjs
