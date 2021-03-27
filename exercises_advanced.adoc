@@ -1,0 +1,16 @@
+= Exercises for Beginners
+Carsten Brueggenolte <mail@cbrueggenolte.de>
+v1.0.0, March 2021
+// Meta Data
+:description: Rewritten from the 100+ Python challenging programming exercises"
+:keywords: Golang, programming, exercises, challenges
+:toc: right
+// Settings
+:icons: font
+:source-highlighter: highlightjs
+:sectnums:
+:url-project: https://github.com/cblte/100-golang-exercises/
+:url-issues: {url-project}/issues
+
+
+This document contains all the advanced exercises. If you find an error or a bug or something that could be written better, please get in contact with me. Thanks.
