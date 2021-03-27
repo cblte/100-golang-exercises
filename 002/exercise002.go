@@ -25,20 +25,32 @@ func main() {
 		log.Fatal("Please enter a number")
 	}
 
-	if input < 0 {
-		log.Fatal("Please enter a positiv number.")
+	result, err := Ex002(input)
+
+	if err != nil {
+		log.Fatalf("Error for input %v: %v", input, err)
 	}
 
-	fmt.Printf("Factorial of %d = %d", input, Ex002(input))
+	fmt.Printf("Factorial of %d = %d", input, result)
 }
 
 // Ex002 returns a factorial of input
-func Ex002(input int) uint64 {
+// if input == 0 returns 1 as per definition
+// if input < 0 returns 0 and an error
+func Ex002(input int) (uint64, error) {
 	// uint64 because it can get big
 	var factorial uint64 = 1
+
+	if input < 0 {
+		return 0, fmt.Errorf("factorial for negativ values is not allowed")
+	}
+
+	if input == 0 {
+		return 1, nil
+	}
 
 	for i := 1; i <= input; i++ {
 		factorial *= uint64(i)
 	}
-	return factorial
+	return factorial, nil
 }
