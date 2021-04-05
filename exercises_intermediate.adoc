@@ -14,3 +14,29 @@ v1.0.0, March 2021
 
 
 This document contains all the intermediate exercises. If you find an error or a bug or something that could be written better, please get in contact with me. Thanks.
+
+== Exercise 006 : Write a program that calculates and prints the value according to the given formula:
+
+Write a program that calculates and prints the value according to the given formula:
+
+Q = Square root of [(2 * C * D)/H]
+
+Following are the fixed values of C and H:
+
+- C is 50. H is 30.
+- D is the variable whose values should be input to your program in a comma-separated sequence.
+
+Example:
+
+Let us assume the following comma separated input sequence is given to the program: 100,150,180
+
+The output of the program should be: 18,22,24
+
+=== Hints:
+
+- use `math.Sqrt` for the square root
+- use `math.Round` for rounding a float operation
+
+== Solution:
+
+link:006/exercise006.go[]
