@@ -1,12 +1,12 @@
 package main
 
 /*
-Define a module which has at least two methods:
+Create a seperate file (module) which has at least two methods:
 
-- ReadString: to get a string from console input
-- PrintString: to print the string in upper case.
+- ReadString: to read a string from console input
+- PrintString: to return the string in upper case.
 
-Also please include simple test function to test the class methods.
+Also create a `main.go` file that acts as calling class.
 */
 
 import (
