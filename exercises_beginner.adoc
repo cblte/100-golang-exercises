@@ -71,3 +71,20 @@ In case of input data being supplied to the question, it should be assumed to be
 
 === Solution:
 link:004/exercise004.go[]
+
+
+== Exercise 005 : Define a "class" (interface) which has at least two methods
+
+Create a seperate file (module) which has at least two methods:
+
+- ReadString: to read a string from console input
+- PrintString: to return the string in upper case.
+
+Also create a `main.go` file that acts as calling class. 
+
+=== Hints
+- Use `bufio.NewScanner(os.Stdin)` to read in a full line of text.
+- user `go run .` to execute considering all files in the directory
+
+=== Solution:
+link:005/exercise005.go[]
