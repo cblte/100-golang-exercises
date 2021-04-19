@@ -15,7 +15,7 @@ v1.0.0, March 2021
 
 This document contains all the intermediate exercises. If you find an error or a bug or something that could be written better, please get in contact with me. Thanks.
 
-== Exercise 006 : Write a program that calculates and prints the value according to the given formula:
+== Exercise 006
 
 Write a program that calculates and prints the value according to the given formula:
 
@@ -42,7 +42,7 @@ The output of the program should be: 18,22,24
 link:006/exercise006.go[]
 
 
-== Exercise 007: Write a program which takes 2 digits and generate a 2 dimensional slice
+== Exercise 007
 
 Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
 Note: i=0,1.., X-1; j=0,1,¡­Y-1.
@@ -61,6 +61,22 @@ Note: In case of input data being supplied to the question, it should be assumed
 
 link:007/exercise007.go[]
 
-== Exercise 008:
+== Exercise 008
 
+Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 
+Suppose the following input is supplied to the program:
+    
+    without,hello,bag,world
+
+Then, the output should be:
+
+    bag,hello,without,world
+
+=== Hints:
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+=== Solution:
+
+link:008/exercise008.go[]
