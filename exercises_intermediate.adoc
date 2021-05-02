@@ -80,3 +80,69 @@ In case of input data being supplied to the question, it should be assumed to be
 === Solution:
 
 link:008/exercise008.go[]
+
+
+== Exercise 009
+
+Write a program that accepts sequence of lines as input and prints the lines 
+after making all characters in the sentence capitalized.
+
+Suppose the following input is supplied to the program:
+
+    Hello world
+    Practice makes perfect
+
+Then, the output should be:
+
+    HELLO WORLD
+    PRACTICE MAKES PERFECT
+
+=== Hints
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+=== Solution:
+
+link:009/exercise009.go[]
+
+
+== Exercise 009
+
+Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+
+Suppose the following input is supplied to the program:
+
+    hello world and practice makes perfect and hello world again
+
+Then, the output should be:
+
+    again and hello makes perfect practice world
+
+=== Hints
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+
+== Solution:
+
+link:010/exercise010.go[]
+
+
+== Exercise 011
+
+Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+
+Example:
+    0100,0011,1010,1001
+
+Then the output should be:
+    1010
+
+Notes: Assume the data is input by console.
+
+=== Hints:
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+=== Solution:
+
+link:011/exercise011.go[]
