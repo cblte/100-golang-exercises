@@ -18,7 +18,7 @@ func TestEx011(t *testing.T) {
 	got := Ex011(input)
 
 	if !reflect.DeepEqual(got, want) {
-		t.Errorf("Ex010() = %v, want %v", got, want)
+		t.Errorf("Ex011() = %v, want %v", got, want)
 	}
 
 }
