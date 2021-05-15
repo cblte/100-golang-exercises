@@ -146,3 +146,18 @@ In case of input data being supplied to the question, it should be assumed to be
 === Solution:
 
 link:011/exercise011.go[]
+
+
+== Exercise 012
+
+Write a program, which will find all such numbers between 100 and 300 (both included) such that each digit of the number is an even number. The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+=== Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+
+=== Solution:
+
+link:012/exercise012.go[]
+
+
