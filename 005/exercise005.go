@@ -1,7 +1,7 @@
 package main
 
 /*
-Create a seperate file (module) which has at least two methods:
+Create a separate file (module) which has at least two methods:
 
 - ReadString: to read a string from console input
 - PrintString: to return the string in upper case.

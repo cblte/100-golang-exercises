@@ -5,9 +5,9 @@ import (
 	"strings"
 )
 
-// Ex011 takes comma seperated string with 4 digits binary numbers
-// returns a command seperatad string which the numbers which can
-// be deviced by 5
+// Ex011 takes comma separated string with 4 digits binary numbers
+// returns a command separated string which the numbers which can
+// be divided by 5
 func Ex011(input string) string {
 
 	// split string
