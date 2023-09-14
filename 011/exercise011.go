@@ -6,7 +6,7 @@ import (
 )
 
 // Ex011 takes comma separated string with 4 digits binary numbers
-// returns a command separated string which the numbers which can
+// returns a comma separated string which the numbers which can
 // be divided by 5
 func Ex011(input string) string {
 
