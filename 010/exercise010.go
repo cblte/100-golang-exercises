@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// Ex010 accepts a String seperated by whitespace.
+// Ex010 accepts a String separated by whitespace.
 // input gets sorted and duplicates are removed
 func Ex010(input string) string {
 

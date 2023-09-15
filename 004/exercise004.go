@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// Ex004 takes a string of comma-seperated numbers and returns a slice of int
+// Ex004 takes a string of comma-separated numbers and returns a slice of int
 func Ex004(input string) []int {
 	// create a map with the size of n
 	numbers := strings.Split(input, ",")
