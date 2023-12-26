@@ -105,7 +105,7 @@ In case of input data being supplied to the question, it should be assumed to be
 link:009/exercise009.go[]
 
 
-== Exercise 009
+== Exercise 010
 
 Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
 
