@@ -19,14 +19,41 @@ But before that, here are the links to the files:
 
 ## Practice
 
-Every exercise from `001` to `020` ships with a `practice/` subfolder containing an empty function stub and the same tests as the reference solution. Code your own answer there and run:
+Every exercise from `001` to `020` ships with a `practice/` subfolder containing an empty function stub and the same tests as the reference solution. Open `practice.go`, fill in your answer, then run the tests for that exercise.
+
+### General workflow
 
 ```bash
-cd 001/practice
+# From the repo root, run any practice with:
+go test ./<NNN>/practice/...
+
+# Or cd into it first and run the local tests:
+cd <NNN>/practice
 go test ./...
+
+# Useful flags
+go test -v ./...        # verbose — show every test name
+go test -run TestEx001  # only run a specific test
 ```
 
-The reference implementation lives next to it (e.g. `001/exercise001.go`) so you can compare once you're done.
+### Run one exercise at a time
+
+```bash
+go test ./001/practice/...   # Exercise 001 — divisible by 7, not by 5
+```
+
+### Run them all at once
+
+```bash
+# All practice packages from the repo root (Go's "..." wildcard
+# matches any path segment, including the NNN folders).
+go test ./.../practice/...
+
+# Verbose
+go test -v ./.../practice/...
+```
+
+The reference implementation lives next to each practice folder (e.g. `001/exercise001.go`) so you can compare once you're done.
 
 ## Level description
 
