@@ -65,7 +65,7 @@ Beginner means someone who has just gone through an introductory Golang course. 
 
 ### Level 2 Intermediate
 
-Intermediate means someone who has just learned Golang, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Golang classes or functions. The answers cannot be directly be found in the textbooks.
+Intermediate means someone who has just learned Golang, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 2 or 3 Golang classes or functions. The answers cannot be directly be found in the textbooks.
 
 ### Level 3 Advanced
 
